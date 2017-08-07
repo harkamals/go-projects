@@ -8,6 +8,6 @@ import (
 )
 
 func main() {
-	dir,_ := os.Getwd()
-	http.ListenAndServe(":3000", http.FileServer(http.Dir(dir)) )
+	dir, _ := os.Getwd()
+	http.ListenAndServe(":3000", http.FileServer(http.Dir(dir)))
 }
