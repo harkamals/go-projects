@@ -7,9 +7,9 @@
 package main
 
 import (
-	"os"
-	"net/http"
 	"flag"
+	"net/http"
+	"os"
 )
 
 func main() {
