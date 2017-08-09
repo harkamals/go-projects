@@ -38,19 +38,21 @@ func main() {
 		fmt.Println("Switch case: OK")
 	}
 
-	// switch: count vowels
+	// switch: count vowels and consonants
 	atoz := "the quick brown fox jumps over the lazy dog"
 	vowels := 0
+	consonants := 0
 
 	for _, r := range atoz {
 		switch r {
 		case 'a', 'e', 'i', 'o', 'u':
 			vowels++
+		default:
+			consonants++
 
 		}
-
 	}
 
-	fmt.Printf("Vowels:%d", vowels)
+	fmt.Printf("Vowels:%d, Consonants: %d", vowels, consonants)
 
 }
