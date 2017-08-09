@@ -35,7 +35,9 @@ func main() {
 	fmt.Printf("%d\n", len(atoz))
 
 	for i, char := range atoz[:10] {
+
 		fmt.Printf("%d %c\n", i, char)
+
 	}
 
 }
