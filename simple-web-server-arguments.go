@@ -23,5 +23,6 @@ func main() {
 	} else {
 		dir = *path
 	}
+
 	http.ListenAndServe(":"+*port, http.FileServer(http.Dir(dir)))
 }
