@@ -24,7 +24,7 @@ func main() {
 	}
 
 	// switch
-	n, err := fmt.Printf("switch case check\n")
+	n, err := fmt.Printf("switch case check..\n")
 
 	switch {
 	case err != nil:
@@ -33,6 +33,7 @@ func main() {
 		fmt.Printf("no bytes recieved\n")
 	case n != 18:
 		fmt.Printf("n is not 10 bytes, it is: %d\n", n)
+		fallthrough
 	default:
 		fmt.Printf("Switch case: OK")
 	}
