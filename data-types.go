@@ -19,9 +19,13 @@ func main() {
 	fmt.Printf("%15v %4v\n", name, age)
 	fmt.Printf("%15v %4v\n", name, age+rand.Intn(age))
 
+	// String - Literal
+	line := `"nothing" gets escaped \n`
+	fmt.Printf("Literal string: %s\n", line)
+
 	// String
 	var hero = strings.Contains(name, "Bourne")
-	fmt.Printf("Hero: %t\n", hero)
+	fmt.Printf("\nHero: %t\n", hero)
 
 	atoz := "the quick brown fox jumps over the lazy dog\n"
 	fmt.Printf("%s\n", atoz[10:])
