@@ -26,7 +26,7 @@ func main() {
 	if err == nil {
 		fmt.Printf("Count: %d", count)
 	} else {
-		defer os.Exit(-1)
+		os.Exit(-1)
 	}
 
 }
