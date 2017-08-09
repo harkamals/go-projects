@@ -40,7 +40,7 @@ func main() {
 
 	// switch: count vowels and consonants
 	atoz := "the quick brown fox jumps over the lazy dog"
-	var vowels, consonants, zeds int
+	vowels, consonants, zeds := 0, 0, 0
 
 	for _, r := range atoz {
 		switch r {
@@ -54,7 +54,23 @@ func main() {
 
 		}
 	}
-
 	fmt.Printf("Vowels:%d, Consonants: %d (Zeds: %d)", vowels, consonants, zeds)
+
+	// for
+	for i, j := 0, 1; i <= 10; i, j = i+1, j*2 {
+		fmt.Println(i, j)
+	}
+
+	// while
+	var stop bool
+
+	i := 0
+	for !stop {
+		fmt.Print(i)
+		i++
+		if i == 10 {
+			stop = true
+		}
+	}
 
 }
