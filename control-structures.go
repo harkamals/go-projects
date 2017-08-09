@@ -35,7 +35,22 @@ func main() {
 		fmt.Printf("n is not 10 bytes, it is: %d\n", n)
 		fallthrough
 	default:
-		fmt.Printf("Switch case: OK")
+		fmt.Println("Switch case: OK")
 	}
+
+	// switch: count vowels
+	atoz := "the quick brown fox jumps over the lazy dog"
+	vowels := 0
+
+	for _, r := range atoz {
+		switch r {
+		case 'a', 'e', 'i', 'o', 'u':
+			vowels++
+
+		}
+
+	}
+
+	fmt.Printf("Vowels:%d", vowels)
 
 }
