@@ -21,6 +21,14 @@ func main() {
 
 	// String
 	var hero = strings.Contains(name, "Bourne")
-	fmt.Printf("Hero: %t", hero)
+	fmt.Printf("Hero: %t\n", hero)
+
+	atoz := "the quick brown fox jumps over the lazy dog\n"
+	fmt.Printf("%s\n", atoz[10:])
+	fmt.Printf("%d\n", len(atoz))
+
+	for i, char := range atoz[:10] {
+		fmt.Printf("%d %c\n", i, char)
+	}
 
 }
