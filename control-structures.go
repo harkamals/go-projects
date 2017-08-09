@@ -42,6 +42,7 @@ func main() {
 	}
 
 	// switch: count vowels and consonants
+
 	atoz := "the quick brown fox jumps over the lazy dog"
 	vowels, consonants, zeds := 0, 0, 0
 
