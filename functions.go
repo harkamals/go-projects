@@ -19,13 +19,11 @@ func printer(format string, messages ...string) (count int, e error) {
 
 func main() {
 
-	count, err := printer(
+	_, err := printer(
 		"%s\n",
 		"Hello", " World!", "How is the weather")
 
-	if err == nil {
-		fmt.Printf("Count: %d", count)
-	} else {
+	if err != nil {
 		os.Exit(-1)
 	}
 
