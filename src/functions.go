@@ -1,7 +1,7 @@
 // MIT License
 // Copyright (c) 2017 @harkamals
 
-package main
+package src
 
 import (
 	"fmt"

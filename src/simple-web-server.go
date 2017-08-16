@@ -3,7 +3,7 @@
 
 // Simple web server
 
-package main
+package src
 
 import (
 	"net/http"
