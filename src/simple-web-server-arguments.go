@@ -4,7 +4,7 @@
 // Simple web server-with-arguments
 // Usage: go run simple-web-server-arguments.go -port 5051 -path /mypath
 
-package src
+package main
 
 import (
 	"flag"
