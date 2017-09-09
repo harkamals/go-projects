@@ -3,7 +3,7 @@
 
 // Simple web server
 
-package main
+package self_learn
 
 import (
 	"net/http"
