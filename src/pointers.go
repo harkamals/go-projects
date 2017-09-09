@@ -2,7 +2,17 @@ package main
 
 import "fmt"
 
+func zero(x *int) {
+	*x = 10
+}
+
 func main() {
-	count := 10
-	fmt.Printf("Value:%v, address: %v", count, &count)
+	x := 5
+	fmt.Println(x)
+	fmt.Println(&x)
+
+	zero(&x)
+	fmt.Println(x)
+	fmt.Println(&x)
+
 }
